@@ -29,3 +29,20 @@ function slideAtual(n){
     indexSlide = n;
     showSlides();
 }
+
+function abrirSideBar() {
+    const sideBar = document.querySelector('.sideBarLinks');
+    const divMain = document.querySelector('.divMain');
+
+    sideBar.classList.toggle('aberto');
+    divMain.classList.toggle('sideBar')
+}
+
+function fecharSideBar(){
+    const sideBar = document.querySelector('.sideBarLinks');
+    const divMain = document.querySelector('.divMain');
+
+    sideBar.classList.remove('aberto');
+    divMain.classList.remove('sideBar');
+
+}
